@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/footers",
-      "handler": "footer.find",
+      "path": "/prints",
+      "handler": "prints.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/footers/count",
-      "handler": "footer.count",
+      "path": "/prints/count",
+      "handler": "prints.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/footers/:id",
-      "handler": "footer.findOne",
+      "path": "/prints/:id",
+      "handler": "prints.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/footers",
-      "handler": "footer.create",
+      "path": "/prints",
+      "handler": "prints.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/footers/:id",
-      "handler": "footer.update",
+      "path": "/prints/:id",
+      "handler": "prints.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/footers/:id",
-      "handler": "footer.delete",
+      "path": "/prints/:id",
+      "handler": "prints.delete",
       "config": {
         "policies": []
       }

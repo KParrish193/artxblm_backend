@@ -31,9 +31,34 @@
       "plugin": "upload",
       "required": true
     },
-    "categories": {
-      "via": "artists",
-      "collection": "category"
+    "black": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "medium": {
+      "type": "string",
+      "required": false
+    },
+    "exchange": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "digital": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "conduct": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "inquiry": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
     }
   }
 }
