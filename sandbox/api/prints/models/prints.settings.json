@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prints",
+  "info": {
+    "name": "prints"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "medium": {
+      "type": "string"
+    },
+    "artist": {
+      "model": "artist"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 20,
+      "maxLength": 280
+    }
+  }
+}

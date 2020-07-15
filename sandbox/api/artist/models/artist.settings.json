@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "name": "artist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 1000,
+      "minLength": 250
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "black": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "medium": {
+      "type": "string",
+      "required": false
+    },
+    "exchange": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "digital": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "conduct": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "inquiry": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    }
+  }
+}
